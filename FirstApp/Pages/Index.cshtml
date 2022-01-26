@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>
+    Rectangle Area
+</h1>
+
+<img src="~/img/rect.jfif" />
+
+<form method="post">
+    <input asp-for="Length" />
+    <input asp-for="Width" />
+    <button>Send</button>
+</form>
+
+@if (ViewData["area"] != null)
+{
+    <span>
+        Area =
+        @ViewData["area"]
+    </span>
+}
