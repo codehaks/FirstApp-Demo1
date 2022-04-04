@@ -16,8 +16,8 @@ namespace FirstApp.Pages
 
         public void OnGet()
         {
-            Length = 19;
-            Width = 5;
+            Length = 5;
+            Width = 7;
         }
 
         [BindProperty]

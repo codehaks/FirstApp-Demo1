@@ -6,7 +6,7 @@ public class ApplicationState
 
     public ApplicationState()
     {
-        //_state = new Dictionary<string, string>();
+        _state = new Dictionary<string, string>();
     }
 
     public void Set(string key,string value)

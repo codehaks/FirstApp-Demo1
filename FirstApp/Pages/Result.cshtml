@@ -1,6 +1,6 @@
 ﻿@page
 @model FirstApp.Pages.ResultModel
-
+@inject FirstApp.Common.ApplicationState _state
 
 @{
     ViewData["title"] = "Result";
@@ -10,3 +10,4 @@
 
 @*Area: @TempData["area"]*@
 
+Area: @_state.Get("area")
